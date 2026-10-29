@@ -1,0 +1,239 @@
+{
+  "product/all": {
+    "status": 200,
+    "data": [
+      { "id": 1, "name": "Wireless Headphones", "price": 89.99, "category": "electronics", "inStock": true },
+      { "id": 2, "name": "Stainless Steel Water Bottle", "price": 24.5, "category": "kitchen", "inStock": true },
+      { "id": 3, "name": "Running Shoes", "price": 119.0, "category": "apparel", "inStock": false },
+      { "id": 4, "name": "Mechanical Keyboard", "price": 149.99, "category": "electronics", "inStock": true },
+      { "id": 5, "name": "Yoga Mat", "price": 32.0, "category": "fitness", "inStock": true }
+    ],
+    "meta": { "total": 5, "page": 1, "pageSize": 20 }
+  },
+
+  "product/1": {
+    "status": 200,
+    "data": {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "description": "Over-ear Bluetooth headphones with active noise cancellation and 30-hour battery life.",
+      "price": 89.99,
+      "currency": "USD",
+      "category": "electronics",
+      "brand": "SoundWave",
+      "sku": "SW-HP-001",
+      "inStock": true,
+      "stockQuantity": 42,
+      "rating": 4.6,
+      "reviewCount": 318,
+      "images": ["/images/products/1-front.jpg", "/images/products/1-side.jpg"],
+      "tags": ["bluetooth", "noise-cancelling", "audio"],
+      "createdAt": "2026-03-14T10:22:00Z",
+      "updatedAt": "2026-10-01T08:15:00Z"
+    }
+  },
+
+  "product/2": {
+    "status": 200,
+    "data": {
+      "id": 2,
+      "name": "Stainless Steel Water Bottle",
+      "description": "Double-walled insulated bottle that keeps drinks cold for 24 hours or hot for 12.",
+      "price": 24.5,
+      "currency": "USD",
+      "category": "kitchen",
+      "brand": "HydroKeep",
+      "sku": "HK-WB-750",
+      "inStock": true,
+      "stockQuantity": 210,
+      "rating": 4.8,
+      "reviewCount": 1204,
+      "images": ["/images/products/2-front.jpg"],
+      "tags": ["insulated", "reusable", "750ml"],
+      "createdAt": "2026-01-08T14:00:00Z",
+      "updatedAt": "2026-09-22T11:40:00Z"
+    }
+  },
+
+  "product/3": {
+    "status": 200,
+    "data": {
+      "id": 3,
+      "name": "Running Shoes",
+      "description": "Lightweight road running shoes with breathable mesh upper and responsive foam sole.",
+      "price": 119.0,
+      "currency": "USD",
+      "category": "apparel",
+      "brand": "StrideLab",
+      "sku": "SL-RS-210",
+      "inStock": false,
+      "stockQuantity": 0,
+      "rating": 4.3,
+      "reviewCount": 87,
+      "images": ["/images/products/3-front.jpg", "/images/products/3-sole.jpg"],
+      "tags": ["running", "lightweight", "mesh"],
+      "sizes": [7, 8, 9, 10, 11, 12],
+      "createdAt": "2026-05-02T09:30:00Z",
+      "updatedAt": "2026-10-20T16:05:00Z"
+    }
+  },
+
+  "product/4": {
+    "status": 200,
+    "data": {
+      "id": 4,
+      "name": "Mechanical Keyboard",
+      "description": "75% layout hot-swappable mechanical keyboard with RGB backlighting.",
+      "price": 149.99,
+      "currency": "USD",
+      "category": "electronics",
+      "brand": "KeyForge",
+      "sku": "KF-MK-075",
+      "inStock": true,
+      "stockQuantity": 15,
+      "rating": 4.7,
+      "reviewCount": 452,
+      "images": ["/images/products/4-top.jpg"],
+      "tags": ["mechanical", "rgb", "hot-swap"],
+      "createdAt": "2026-02-19T13:10:00Z",
+      "updatedAt": "2026-10-11T07:50:00Z"
+    }
+  },
+
+  "product/5": {
+    "status": 200,
+    "data": {
+      "id": 5,
+      "name": "Yoga Mat",
+      "description": "6mm non-slip yoga mat made from eco-friendly TPE with carrying strap.",
+      "price": 32.0,
+      "currency": "USD",
+      "category": "fitness",
+      "brand": "ZenFlex",
+      "sku": "ZF-YM-006",
+      "inStock": true,
+      "stockQuantity": 98,
+      "rating": 4.5,
+      "reviewCount": 263,
+      "images": ["/images/products/5-rolled.jpg", "/images/products/5-flat.jpg"],
+      "tags": ["yoga", "non-slip", "eco-friendly"],
+      "createdAt": "2026-04-11T12:00:00Z",
+      "updatedAt": "2026-08-30T10:25:00Z"
+    }
+  },
+
+  "product/category/electronics": {
+    "status": 200,
+    "data": [
+      { "id": 1, "name": "Wireless Headphones", "price": 89.99, "inStock": true },
+      { "id": 4, "name": "Mechanical Keyboard", "price": 149.99, "inStock": true }
+    ],
+    "meta": { "total": 2 }
+  },
+
+  "category/all": {
+    "status": 200,
+    "data": [
+      { "id": "electronics", "name": "Electronics", "productCount": 2 },
+      { "id": "kitchen", "name": "Kitchen", "productCount": 1 },
+      { "id": "apparel", "name": "Apparel", "productCount": 1 },
+      { "id": "fitness", "name": "Fitness", "productCount": 1 }
+    ]
+  },
+
+  "user/all": {
+    "status": 200,
+    "data": [
+      { "id": 101, "name": "Jordan Lee", "email": "jordan.lee@example.com", "role": "customer" },
+      { "id": 102, "name": "Priya Shah", "email": "priya.shah@example.com", "role": "admin" }
+    ],
+    "meta": { "total": 2 }
+  },
+
+  "user/101": {
+    "status": 200,
+    "data": {
+      "id": 101,
+      "name": "Jordan Lee",
+      "email": "jordan.lee@example.com",
+      "role": "customer",
+      "address": {
+        "street": "123 Maple Ave",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62701",
+        "country": "US"
+      },
+      "createdAt": "2025-11-03T18:45:00Z"
+    }
+  },
+
+  "user/102": {
+    "status": 200,
+    "data": {
+      "id": 102,
+      "name": "Priya Shah",
+      "email": "priya.shah@example.com",
+      "role": "admin",
+      "address": {
+        "street": "48 Harbor St",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97201",
+        "country": "US"
+      },
+      "createdAt": "2025-06-21T09:12:00Z"
+    }
+  },
+
+  "order/all": {
+    "status": 200,
+    "data": [
+      { "id": 5001, "userId": 101, "total": 114.49, "status": "shipped", "createdAt": "2026-10-15T14:20:00Z" },
+      { "id": 5002, "userId": 101, "total": 149.99, "status": "processing", "createdAt": "2026-10-27T09:05:00Z" }
+    ],
+    "meta": { "total": 2 }
+  },
+
+  "order/5001": {
+    "status": 200,
+    "data": {
+      "id": 5001,
+      "userId": 101,
+      "status": "shipped",
+      "items": [
+        { "productId": 1, "name": "Wireless Headphones", "quantity": 1, "unitPrice": 89.99 },
+        { "productId": 2, "name": "Stainless Steel Water Bottle", "quantity": 1, "unitPrice": 24.5 }
+      ],
+      "subtotal": 114.49,
+      "tax": 0.0,
+      "shipping": 0.0,
+      "total": 114.49,
+      "trackingNumber": "1Z999AA10123456784",
+      "createdAt": "2026-10-15T14:20:00Z"
+    }
+  },
+
+  "order/5002": {
+    "status": 200,
+    "data": {
+      "id": 5002,
+      "userId": 101,
+      "status": "processing",
+      "items": [
+        { "productId": 4, "name": "Mechanical Keyboard", "quantity": 1, "unitPrice": 149.99 }
+      ],
+      "subtotal": 149.99,
+      "tax": 0.0,
+      "shipping": 0.0,
+      "total": 149.99,
+      "trackingNumber": null,
+      "createdAt": "2026-10-27T09:05:00Z"
+    }
+  },
+
+  "_notFound": {
+    "status": 404,
+    "error": { "code": "NOT_FOUND", "message": "The requested resource does not exist." }
+  }
+}
