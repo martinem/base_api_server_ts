@@ -232,6 +232,11 @@
     }
   },
 
+  "order/5003": {
+    "status": 404,
+    "error": { "status": "error", "message": "Testing errors in the client" }
+  },
+
   "_notFound": {
     "status": 404,
     "error": { "code": "NOT_FOUND", "message": "The requested resource does not exist." }
